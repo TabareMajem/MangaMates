@@ -8,16 +8,16 @@ import {
     DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu";
 import { saveAs } from "file-saver";
-import { Download, Share2 } from "lucide-react";
+import { Download, Share } from "lucide-react";
 
 interface ExportButtonProps {
   data: any;
-  filename?: string;
-  onShare?: () => void;
+  filename: string;
+  onShare: () => void;
 }
 
-export function ExportButton({ data, filename = "insights", onShare }: ExportButtonProps) {
-  const handleExportJSON = () => {
+export function ExportButton({ data, filename, onShare }: ExportButtonProps) {
+  const handleDownload = () => {
     const blob = new Blob([JSON.stringify(data, null, 2)], {
       type: "application/json"
     });
@@ -62,14 +62,14 @@ export function ExportButton({ data, filename = "insights", onShare }: ExportBut
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent>
-        <DropdownMenuItem onClick={handleExportJSON}>
+        <DropdownMenuItem onClick={handleDownload}>
           Export as JSON
         </DropdownMenuItem>
         <DropdownMenuItem onClick={handleExportCSV}>
           Export as CSV
         </DropdownMenuItem>
         <DropdownMenuItem onClick={handleShare}>
-          <Share2 className="mr-2 h-4 w-4" />
+          <Share className="mr-2 h-4 w-4" />
           Share
         </DropdownMenuItem>
       </DropdownMenuContent>

@@ -1,4 +1,3 @@
-import { getInsights, saveInsight } from '@/lib/services/insights-service';
 import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs';
 import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
@@ -11,14 +10,19 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
-  const url = new URL(request.url);
-  const type = url.searchParams.get('type');
-
   try {
-    const insights = await getInsights(session.user.id, type || undefined);
-    return NextResponse.json(insights);
+    const { data: insights } = await supabase
+      .from('insights')
+      .select('*')
+      .eq('user_id', session.user.id)
+      .order('created_at', { ascending: false });
+
+    return NextResponse.json(insights || []);
   } catch (error) {
-    return NextResponse.json({ error: 'Failed to fetch insights' }, { status: 500 });
+    return NextResponse.json(
+      { error: 'Failed to fetch insights' },
+      { status: 500 }
+    );
   }
 }
 

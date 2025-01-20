@@ -71,6 +71,24 @@ export interface ConversationContext {
   }>;
 }
 
+interface AgentTask {
+  id: string;
+  agentId: string;
+  type: 'daily' | 'weekly' | 'custom';
+  action: string;
+  schedule: {
+    time?: string;
+    days?: string[];
+    conditions?: {
+      when: string;
+      then: string;
+    }[];
+  };
+  isActive: boolean;
+  lastRun?: string;
+  nextRun?: string;
+}
+
 // Make sure all types are exported
 export type {
     AIServiceConfig, Character, CharacterAction, CharacterResponse, CharacterState, ConversationContext, Goal,

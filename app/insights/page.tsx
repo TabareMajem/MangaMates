@@ -7,9 +7,11 @@ import { InteractiveThemeCloud } from "@/components/insights/InteractiveThemeClo
 import { MindsetRadarChart } from "@/components/insights/MindsetRadarChart";
 import { LoadingSpinner } from "@/components/ui/loading-spinner";
 import { useEmotionData, useEmotionDataFallback } from "@/hooks/use-emotion-data";
-import { useAuth } from "@/lib/auth/context";
 import { EmotionData } from "@/types/emotion";
+import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { cookies } from 'next/headers';
+import { redirect } from 'next/navigation';
 
 const queryClient = new QueryClient();
 
@@ -37,18 +39,19 @@ function InsightsContent() {
   );
 }
 
-export default function InsightsPage() {
-  const { user } = useAuth();
+export default async function InsightsPage() {
+  const supabase = createServerComponentClient({ cookies });
+  const { data: { session } } = await supabase.auth.getSession();
 
-  if (!user) {
-    return <div>Please sign in to view insights</div>;
+  if (!session) {
+    redirect('/login');
   }
 
   return (
     <QueryClientProvider client={queryClient}>
       <div className="container mx-auto py-8">
-        <h1 className="text-3xl font-bold mb-8">Your Insights</h1>
-        <InsightsViewer userId={user.id} />
+        <h1 className="text-2xl font-bold mb-6">Your Insights</h1>
+        <InsightsViewer userId={session.user.id} />
         <InsightsContent />
       </div>
     </QueryClientProvider>

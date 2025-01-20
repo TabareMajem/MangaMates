@@ -1,4 +1,5 @@
 import { RateLimiter } from '@/lib/security/rate-limiter';
+import { createMiddlewareClient } from '@supabase/auth-helpers-nextjs';
 import { Redis } from '@upstash/redis';
 import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
@@ -6,13 +7,18 @@ import { NextResponse } from 'next/server';
 const redis = Redis.fromEnv();
 const limiter = new RateLimiter(redis);
 
-export async function middleware(request: NextRequest) {
+export async function middleware(req: NextRequest) {
+  const res = NextResponse.next();
+  const supabase = createMiddlewareClient({ req, res });
+
+  await supabase.auth.getSession();
+
   // Skip rate limiting for static assets
-  if (request.nextUrl.pathname.startsWith('/_next')) {
-    return NextResponse.next();
+  if (req.nextUrl.pathname.startsWith('/_next')) {
+    return res;
   }
 
-  const ip = request.ip ?? 'anonymous';
+  const ip = req.ip ?? 'anonymous';
   const { success, limit, remaining, reset } = await limiter.check(ip);
 
   if (!success) {
@@ -26,7 +32,7 @@ export async function middleware(request: NextRequest) {
     });
   }
 
-  const response = NextResponse.next();
+  const response = res;
   
   // Add rate limit headers
   response.headers.set('X-RateLimit-Limit', limit.toString());
