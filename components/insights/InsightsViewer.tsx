@@ -5,6 +5,7 @@ import { Insight } from '@/types/insights';
 import { useEffect, useState } from 'react';
 import { AnalyticsDashboard } from '../analytics/AnalyticsDashboard';
 import { JournalViewer } from '../journal/JournalViewer';
+import { InsightCards } from './InsightCards';
 
 export function InsightsViewer({ userId }: { userId: string }) {
   const [insights, setInsights] = useState<Insight[]>([]);

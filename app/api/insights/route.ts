@@ -5,9 +5,9 @@ import { NextResponse } from 'next/server';
 
 export async function GET(request: Request) {
   const supabase = createRouteHandlerClient({ cookies });
-  const { data: { user } } = await supabase.auth.getUser();
+  const { data: { session } } = await supabase.auth.getSession();
 
-  if (!user) {
+  if (!session?.user) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
@@ -15,7 +15,7 @@ export async function GET(request: Request) {
   const type = url.searchParams.get('type');
 
   try {
-    const insights = await getInsights(user.id, type || undefined);
+    const insights = await getInsights(session.user.id, type || undefined);
     return NextResponse.json(insights);
   } catch (error) {
     return NextResponse.json({ error: 'Failed to fetch insights' }, { status: 500 });
@@ -24,18 +24,19 @@ export async function GET(request: Request) {
 
 export async function POST(request: Request) {
   const supabase = createRouteHandlerClient({ cookies });
-  const { data: { user } } = await supabase.auth.getUser();
+  const { data: { session } } = await supabase.auth.getSession();
 
-  if (!user) {
+  if (!session?.user) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
   try {
     const body = await request.json();
     const insight = await saveInsight({
-      userId: user.id,
+      userId: session.user.id,
       type: body.type,
-      data: body.data
+      data: body.data,
+      created_at: new Date().toISOString()
     });
     return NextResponse.json(insight);
   } catch (error) {
