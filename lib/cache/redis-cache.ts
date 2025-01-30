@@ -42,4 +42,4 @@ export class RedisCache {
 // Create cache instances for different purposes
 export const journalCache = new RedisCache('journal:');
 export const analyticsCache = new RedisCache('analytics:');
-export const userCache = new RedisCache('user:'); 
+export const userCache = new RedisCache('user:');

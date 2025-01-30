@@ -108,4 +108,4 @@ function ConnectionCard({ connection, currentUserId }: {
       </div>
     </Card>
   );
-} 
+}

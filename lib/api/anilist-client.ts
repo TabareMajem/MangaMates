@@ -59,4 +59,4 @@ export class AniListClient {
 
     return response.json();
   }
-} 
+}

@@ -25,4 +25,4 @@ CREATE INDEX IF NOT EXISTS idx_subscription_renewal ON subscriptions (next_billi
 ANALYZE journal_entries;
 ANALYZE analytics_events;
 ANALYZE users;
-ANALYZE subscriptions; 
+ANALYZE subscriptions;

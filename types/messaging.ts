@@ -24,4 +24,4 @@ export interface MessageMetrics {
   completed: number;
   failed: number;
   avgProcessingTime: number;
-} 
+}

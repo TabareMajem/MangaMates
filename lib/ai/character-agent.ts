@@ -81,4 +81,4 @@ export class CharacterAgent {
     // Implementation will use these parameters later
     return true;
   }
-} 
+}

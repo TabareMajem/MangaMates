@@ -33,4 +33,4 @@ export class StructuredLogger {
   private calculateSeverity(error: Error): Severity {
     // Implement severity calculation logic
   }
-} 
+}

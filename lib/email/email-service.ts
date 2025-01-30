@@ -31,4 +31,4 @@ export const sendWelcomeEmail = async (email: string, name: string) => {
       <p>We're excited to have you on board.</p>
     `
   });
-}; 
+};

@@ -76,4 +76,4 @@ export function InsightCards({ insights }: InsightCardsProps) {
       ))}
     </div>
   );
-} 
+}

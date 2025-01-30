@@ -32,4 +32,4 @@ export interface ReferralProgram {
   startDate: string;
   endDate?: string;
   status: 'active' | 'inactive' | 'expired';
-} 
+}

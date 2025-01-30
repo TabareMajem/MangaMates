@@ -33,4 +33,4 @@ export class ErrorHandler {
       console.error('Failed to store error:', err);
     }
   }
-} 
+}

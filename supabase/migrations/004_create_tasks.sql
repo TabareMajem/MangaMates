@@ -132,4 +132,4 @@ $$ language plpgsql;
 create trigger update_task_analytics_trigger
 after insert or update on task_executions
 for each row
-execute function update_task_analytics(); 
+execute function update_task_analytics();

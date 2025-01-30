@@ -71,4 +71,4 @@ export class CostCalculator {
     // Cache current day metrics
     await this.redis.hset(`usage:${date}`, metrics);
   }
-} 
+}

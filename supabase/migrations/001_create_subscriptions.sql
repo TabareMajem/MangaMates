@@ -23,4 +23,4 @@ create policy "Service role can manage all subscriptions"
 
 -- Add indexes
 create index subscriptions_user_id_idx on public.subscriptions(user_id);
-create index subscriptions_stripe_id_idx on public.subscriptions(stripe_subscription_id); 
+create index subscriptions_stripe_id_idx on public.subscriptions(stripe_subscription_id);

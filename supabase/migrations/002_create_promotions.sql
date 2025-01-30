@@ -76,4 +76,4 @@ create policy "Service role can manage coupons"
 -- Add indexes
 create index promotion_codes_code_idx on public.promotion_codes(code);
 create index customer_discounts_customer_id_idx on public.customer_discounts(customer_id);
-create index coupons_coupon_id_idx on public.coupons(coupon_id); 
+create index coupons_coupon_id_idx on public.coupons(coupon_id);

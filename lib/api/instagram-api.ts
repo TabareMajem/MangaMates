@@ -92,4 +92,4 @@ export class InstagramAPI {
 
     if (error) throw error;
   }
-} 
+}

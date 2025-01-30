@@ -11,4 +11,4 @@ export interface AnalyticsData {
   event_type: string;
   event_data: Record<string, any>;
   timestamp: string;
-} 
+}

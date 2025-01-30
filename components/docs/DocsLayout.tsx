@@ -38,4 +38,4 @@ export function DocsLayout({ children, toc }: DocsLayoutProps) {
       </div>
     </div>
   );
-} 
+}

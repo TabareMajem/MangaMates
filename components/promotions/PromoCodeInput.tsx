@@ -108,4 +108,4 @@ export function withPromoTracking<P extends object>(
 }
 
 // Export tracked version
-export const TrackedPromoCodeInput = withPromoTracking(PromoCodeInput); 
+export const TrackedPromoCodeInput = withPromoTracking(PromoCodeInput);

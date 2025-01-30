@@ -70,4 +70,4 @@ export class ConnectionPool {
   async end() {
     await this.pool.end();
   }
-} 
+}

@@ -36,4 +36,4 @@ export async function analyzeJournalEntry(content: string) {
 
   if (error) throw error;
   return data;
-} 
+}

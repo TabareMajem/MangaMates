@@ -40,4 +40,4 @@ export function useJournalEntries() {
   }, []);
 
   return { entries, isLoading, error };
-} 
+}

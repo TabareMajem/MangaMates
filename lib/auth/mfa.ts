@@ -16,4 +16,4 @@ export class MFAService {
     const secret = await this.getMFASecret(userId);
     return authenticator.verify({ token, secret });
   }
-} 
+}

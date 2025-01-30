@@ -9,4 +9,4 @@ export interface QueueMessage {
 export interface MessageQueue {
   enqueue(queue: string, message: QueueMessage, priority?: number): Promise<string>;
   dequeue(queue: string): Promise<QueueMessage | null>;
-} 
+}

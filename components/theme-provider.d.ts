@@ -5,4 +5,4 @@ declare module 'next-themes' {
     children: React.ReactNode;
   }
   export function ThemeProvider(props: ThemeProviderProps): JSX.Element;
-} 
+}

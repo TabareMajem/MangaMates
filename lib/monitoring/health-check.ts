@@ -40,4 +40,4 @@ export class HealthCheckSystem {
 
     return results;
   }
-} 
+}

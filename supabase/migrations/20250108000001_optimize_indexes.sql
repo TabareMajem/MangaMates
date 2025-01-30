@@ -6,4 +6,4 @@ CREATE INDEX idx_analytics_user_type ON analytics_events(user_id, event_type, ti
 CREATE INDEX idx_active_subscriptions ON subscriptions(user_id) WHERE status = 'active';
 
 -- Add GiST index for full-text search
-CREATE INDEX idx_journal_content_search ON journal_entries USING gin(to_tsvector('english', content)); 
+CREATE INDEX idx_journal_content_search ON journal_entries USING gin(to_tsvector('english', content));

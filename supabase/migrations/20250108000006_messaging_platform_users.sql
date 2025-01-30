@@ -51,4 +51,4 @@ CREATE TABLE conversation_analytics (
 -- Create indexes
 CREATE INDEX idx_line_users_user_id ON line_users(user_id);
 CREATE INDEX idx_kakao_users_user_id ON kakao_users(user_id);
-CREATE INDEX idx_conversation_analytics_user_date ON conversation_analytics(user_id, date); 
+CREATE INDEX idx_conversation_analytics_user_date ON conversation_analytics(user_id, date);

@@ -32,4 +32,4 @@ class KakaoClient {
   }
 }
 
-export const kakaoClient = new KakaoClient(); 
+export const kakaoClient = new KakaoClient();

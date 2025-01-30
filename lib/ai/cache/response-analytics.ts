@@ -76,4 +76,4 @@ export class ResponseAnalytics {
       await this.redis.hset(this.ANALYTICS_KEY, { newestEntry: timestamp.toString() });
     }
   }
-} 
+}

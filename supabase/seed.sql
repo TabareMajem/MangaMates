@@ -9,4 +9,4 @@ INSERT INTO analytics_events (user_id, event_type, metadata)
 VALUES 
   ('test-user-id', 'journal_entry', '{"length": 500}'),
   ('test-user-id', 'ai_analysis', '{"duration_ms": 1200}'),
-  ('test-user-id', 'character_chat', '{"character_id": "123"}'); 
+  ('test-user-id', 'character_chat', '{"character_id": "123"}');

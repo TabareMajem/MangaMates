@@ -36,4 +36,4 @@ CREATE POLICY "Only admins can view health check history"
     auth.uid() IN (
       SELECT user_id FROM user_roles WHERE role = 'admin'
     )
-  ); 
+  );

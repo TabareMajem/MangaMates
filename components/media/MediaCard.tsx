@@ -50,4 +50,4 @@ export function MediaCard({ media, showType = true }: MediaCardProps) {
       </Link>
     </Card>
   );
-} 
+}

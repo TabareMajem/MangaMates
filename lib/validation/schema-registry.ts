@@ -73,4 +73,4 @@ export class SchemaRegistry {
       data: z.record(z.unknown())
     }));
   }
-} 
+}

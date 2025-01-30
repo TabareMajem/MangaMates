@@ -42,4 +42,4 @@ export function DatePicker({ date, onChange, placeholder = "Pick a date" }: Date
       </PopoverContent>
     </Popover>
   );
-} 
+}

@@ -13,4 +13,4 @@ create table agent_tasks (
 
 -- Add indexes for performance
 create index agent_tasks_agent_id_idx on agent_tasks(agent_id);
-create index agent_tasks_next_run_idx on agent_tasks(next_run) where is_active = true; 
+create index agent_tasks_next_run_idx on agent_tasks(next_run) where is_active = true;

@@ -47,4 +47,4 @@ export function JournalViewer({ userId }: { userId: string }) {
       ))}
     </div>
   );
-} 
+}

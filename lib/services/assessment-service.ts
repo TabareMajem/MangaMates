@@ -181,4 +181,4 @@ export const __test__ = {
   calculatePersonalityScores,
   calculateMentalHealthScores,
   normalizeScores
-}; 
+};

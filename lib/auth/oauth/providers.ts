@@ -21,4 +21,4 @@ const providers: Record<string, OAuthProvider> = {
     scope: ['profile', 'openid', 'email']
   },
   // Add other providers...
-}; 
+};

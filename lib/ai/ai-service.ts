@@ -93,4 +93,4 @@ export class AIService {
 export const analyzeJournalEntry = withPerformanceTracking(
   'analyzeJournalEntry',
   AIService.analyzeJournalEntry
-); 
+);

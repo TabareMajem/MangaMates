@@ -80,4 +80,4 @@ CREATE TRIGGER set_updated_at
 CREATE TRIGGER set_updated_at
   BEFORE UPDATE ON journal_comments
   FOR EACH ROW
-  EXECUTE FUNCTION set_updated_at(); 
+  EXECUTE FUNCTION set_updated_at();

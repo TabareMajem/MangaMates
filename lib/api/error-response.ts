@@ -32,4 +32,4 @@ export function handleApiError(error: unknown, res: NextApiResponse) {
       code: 'INTERNAL_ERROR'
     }
   });
-} 
+}

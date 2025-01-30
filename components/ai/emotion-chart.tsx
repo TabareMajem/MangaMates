@@ -51,4 +51,4 @@ export function EmotionChart({ emotions }: EmotionChartProps) {
       </ResponsiveContainer>
     </div>
   );
-} 
+}

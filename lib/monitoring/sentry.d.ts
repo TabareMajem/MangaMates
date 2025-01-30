@@ -22,4 +22,4 @@ declare module '@sentry/types' {
       }>;
     };
   }
-} 
+}

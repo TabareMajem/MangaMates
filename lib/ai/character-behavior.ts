@@ -21,4 +21,4 @@ export class CharacterBehavior {
     // Implementation preserved
     return currentState;
   }
-} 
+}

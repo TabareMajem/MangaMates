@@ -46,4 +46,4 @@ async function sendKakaoMessage(channelId: string, content: string) {
     console.error('Failed to send Kakao message:', error);
     throw error;
   }
-} 
+}

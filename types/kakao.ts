@@ -49,4 +49,4 @@ export interface KakaoMessage {
     ios_execution_params?: string;
   };
   button_title?: string;
-} 
+}

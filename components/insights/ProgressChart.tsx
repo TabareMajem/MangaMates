@@ -37,4 +37,4 @@ export function ProgressChart({ data }: ProgressChartProps) {
       </ResponsiveContainer>
     </div>
   );
-} 
+}

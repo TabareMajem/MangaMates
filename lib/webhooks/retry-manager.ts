@@ -178,4 +178,4 @@ export class WebhookRetryManager {
       this.redis.zrem('webhook_retry_queue', eventId)
     ]);
   }
-} 
+}

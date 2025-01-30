@@ -41,4 +41,4 @@ test.describe('Message Sending Flow', () => {
     await expect(page.locator('.error-message')).toContainText('Recipient is required');
     await expect(page.locator('.error-message')).toContainText('Content is required');
   });
-}); 
+});

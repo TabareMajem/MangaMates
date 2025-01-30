@@ -9,4 +9,4 @@ export async function analyzeSocialActivity(userId: string): Promise<SocialAnaly
 
 export async function getProfileAnalytics(profile: SocialProfile): Promise<SocialAnalysis> {
   return analysisService.getProfileAnalytics(profile);
-} 
+}

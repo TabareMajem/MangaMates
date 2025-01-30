@@ -106,4 +106,4 @@ export function useErrorBoundary() {
       throw error;
     }
   };
-} 
+}

@@ -235,4 +235,4 @@ async function handleCouponCreated(coupon: Stripe.Coupon) {
   if (error) {
     throw new Error(`Failed to create coupon: ${error.message}`);
   }
-} 
+}

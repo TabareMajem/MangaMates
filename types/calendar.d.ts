@@ -10,4 +10,4 @@ declare module 'react-day-picker' {
     classNames?: Record<string, string>;
     showOutsideDays?: boolean;
   }
-} 
+}

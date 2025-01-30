@@ -120,4 +120,4 @@ export class UsageAnalytics {
       a.date.localeCompare(b.date)
     );
   }
-} 
+}

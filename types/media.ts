@@ -60,4 +60,4 @@ export interface MediaCollection {
   isPublic: boolean;
   createdAt: string;
   updatedAt: string;
-} 
+}

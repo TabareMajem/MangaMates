@@ -9,4 +9,4 @@ export interface Insight {
 export interface InsightWithRelations extends Insight {
   journal_entries?: JournalEntry[];
   analytics?: AnalyticsData[];
-} 
+}

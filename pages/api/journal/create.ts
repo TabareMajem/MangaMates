@@ -29,4 +29,4 @@ export default async function handler(
       message: error instanceof Error ? error.message : 'Unknown error'
     });
   }
-} 
+}

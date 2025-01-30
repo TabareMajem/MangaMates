@@ -56,4 +56,4 @@ export class QueryBuilder<T> {
 
     return data;
   }
-} 
+}

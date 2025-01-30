@@ -13,4 +13,4 @@ declare module 'k6' {
     get(url: string, params?: object): any;
     post(url: string, body?: any, params?: object): any;
   };
-} 
+}

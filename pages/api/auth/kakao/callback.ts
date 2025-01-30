@@ -36,4 +36,4 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     console.error('Kakao auth error:', error);
     res.redirect(302, '/error?source=kakao-auth');
   }
-} 
+}

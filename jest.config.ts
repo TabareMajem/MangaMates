@@ -33,4 +33,4 @@ const customJestConfig: Config = {
   },
 };
 
-export default createJestConfig(customJestConfig); 
+export default createJestConfig(customJestConfig);

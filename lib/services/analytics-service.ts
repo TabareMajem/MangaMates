@@ -25,4 +25,4 @@ export async function getAnalytics(userId: string, startDate: Date, endDate: Dat
 
   if (error) throw error;
   return data;
-} 
+}

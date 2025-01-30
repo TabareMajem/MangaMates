@@ -27,4 +27,4 @@ SELECT
   ((ai_tokens * 0.0001) + 
    (storage_bytes / 1024.0 / 1024.0 / 1024.0 * 0.023) + 
    (compute_seconds / 3600.0 * 0.0417)) as total_cost
-FROM usage_metrics; 
+FROM usage_metrics;

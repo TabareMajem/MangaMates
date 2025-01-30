@@ -118,4 +118,4 @@ export class PasswordResetManager {
   private async resetAttempts(email: string): Promise<void> {
     await this.redis.del(`pwd_reset_attempts:${email}`);
   }
-} 
+}

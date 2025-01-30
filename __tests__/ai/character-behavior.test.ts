@@ -86,4 +86,4 @@ describe('Character Behavior Tests', () => {
       expect(response).toBeTruthy();
     });
   });
-}); 
+});

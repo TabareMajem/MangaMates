@@ -217,4 +217,4 @@ export class AnimeClient {
       date.day || 1
     ).toISOString();
   }
-} 
+}

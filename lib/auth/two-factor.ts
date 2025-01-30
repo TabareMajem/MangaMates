@@ -186,4 +186,4 @@ export class TwoFactorAuth {
     // Implement decryption using your preferred method
     return text; // TODO: Add proper decryption
   }
-} 
+}

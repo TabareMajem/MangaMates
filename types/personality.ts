@@ -5,4 +5,4 @@ export interface PersonalityTraits {
   agreeableness: number;
   neuroticism: number;
   empathy: number;
-} 
+}

@@ -76,4 +76,4 @@ export interface Database {
 }
 
 export type Tables = Database['public']['Tables'];
-export type TableName = keyof Tables; 
+export type TableName = keyof Tables;

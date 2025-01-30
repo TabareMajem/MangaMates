@@ -45,4 +45,4 @@ export function getNextWeeklyRun(days: string[], timeStr: string): Date {
   }
   
   return nextRun;
-} 
+}

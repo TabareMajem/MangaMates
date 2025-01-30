@@ -44,4 +44,4 @@ export async function exportInsights(userId: string) {
 
   if (error) throw error;
   return data;
-} 
+}

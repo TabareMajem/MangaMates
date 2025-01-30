@@ -250,4 +250,4 @@ export class TaskManager {
   private async releaseLock() {
     await this.redis.del(this.lockKey);
   }
-} 
+}

@@ -111,4 +111,4 @@ export class AIServiceManager {
   private async cacheResponse(key: string, response: string): Promise<void> {
     await this.redis.set(key, response, { ex: 3600 }); // Cache for 1 hour
   }
-} 
+}

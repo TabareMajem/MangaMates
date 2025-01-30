@@ -77,4 +77,4 @@ async function storeAnalysis(analysis: Analysis) {
     });
 
   if (error) throw error;
-} 
+}

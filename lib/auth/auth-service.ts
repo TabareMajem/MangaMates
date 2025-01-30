@@ -44,4 +44,4 @@ export class AuthService {
 
     if (error) throw error;
   }
-} 
+}

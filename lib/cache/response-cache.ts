@@ -9,4 +9,4 @@ export class ResponseCache {
   async set(key: string, value: any, ttl: number) {
     await this.redis.setex(key, ttl, JSON.stringify(value));
   }
-} 
+}

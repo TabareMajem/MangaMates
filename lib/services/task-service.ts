@@ -45,4 +45,4 @@ export async function deleteTask(id: string): Promise<void> {
     .eq('id', id);
 
   if (error) throw error;
-} 
+}

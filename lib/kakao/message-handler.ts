@@ -105,4 +105,4 @@ export class KakaoMessageHandler {
       }, 2); // Higher priority for retries
     }
   }
-} 
+}

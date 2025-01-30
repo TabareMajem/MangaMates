@@ -233,4 +233,4 @@ export function MediaFilters({ onFilterChange, className }: MediaFiltersProps) {
       </div>
     </div>
   );
-} 
+}

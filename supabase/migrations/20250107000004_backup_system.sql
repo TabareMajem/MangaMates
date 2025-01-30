@@ -22,4 +22,4 @@ CREATE POLICY "Only admins can view backup logs"
     auth.uid() IN (
       SELECT user_id FROM user_roles WHERE role = 'admin'
     )
-  ); 
+  );

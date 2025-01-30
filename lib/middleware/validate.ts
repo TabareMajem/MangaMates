@@ -25,4 +25,4 @@ export function validateBody(schemaName: string) {
       });
     }
   };
-} 
+}

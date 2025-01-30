@@ -23,4 +23,4 @@ export default async function handler(
     // Log error internally but don't expose details
     res.status(500).json({ error: 'Failed to fetch media' });
   }
-} 
+}

@@ -36,4 +36,4 @@ export interface PromoCode {
   discount: number;
   expiresAt?: string;
   metadata?: Record<string, any>;
-} 
+}

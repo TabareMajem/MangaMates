@@ -14,4 +14,4 @@ export async function getAllAgentsWithTasks(): Promise<Character[]> {
 
   if (error) throw error;
   return agents;
-} 
+}

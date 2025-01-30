@@ -60,4 +60,4 @@ export function EmotionChart({ data }: EmotionChartProps) {
       </PieChart>
     </ResponsiveContainer>
   );
-} 
+}

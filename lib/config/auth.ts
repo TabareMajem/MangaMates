@@ -3,4 +3,4 @@ export const getRedirectUri = (platform: 'line' | 'kakao') => {
   const baseUrl = isDev ? 'http://localhost:3000' : 'https://mangamates.com';
   
   return `${baseUrl}/api/auth/${platform}/callback`;
-}; 
+};

@@ -148,4 +148,4 @@ function TaskCard({ task, onUpdate, onDelete }: TaskCardProps) {
       <Button variant="destructive" onClick={onDelete}>Delete Task</Button>
     </div>
   );
-} 
+}

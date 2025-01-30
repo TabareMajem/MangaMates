@@ -14,4 +14,4 @@ export function MediaGrid({ items, showType }: MediaGridProps) {
       ))}
     </div>
   );
-} 
+}

@@ -56,4 +56,4 @@ export class SecurityMiddleware {
       "base-uri 'self'"
     ].join('; ');
   }
-} 
+}

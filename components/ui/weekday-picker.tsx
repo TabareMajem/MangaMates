@@ -30,4 +30,4 @@ export function WeekdayPicker({ selected, onChange }: WeekdayPickerProps) {
       ))}
     </div>
   );
-} 
+}

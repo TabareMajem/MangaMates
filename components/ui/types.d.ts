@@ -73,4 +73,4 @@ declare module 'sonner' {
 
 declare module 'zustand' {
   export function create<T>(config: (set: any) => T): () => T;
-} 
+}

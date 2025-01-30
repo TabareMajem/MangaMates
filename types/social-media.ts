@@ -38,4 +38,4 @@ export interface EmotionalPattern {
   intensity: number;
   frequency: number;
   triggers: string[];
-} 
+}

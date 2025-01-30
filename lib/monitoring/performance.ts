@@ -26,4 +26,4 @@ export const getJournalEntries = withPerformanceTracking(
   async (userId: string) => {
     // Implementation
   }
-); 
+);

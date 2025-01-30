@@ -54,4 +54,4 @@ export class AIResponseCache {
     const age = Date.now() - cached.timestamp;
     return age < this.DEFAULT_TTL * 1000;
   }
-} 
+}

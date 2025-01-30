@@ -46,4 +46,4 @@ export async function POST(request: Request) {
   } catch (error) {
     return NextResponse.json({ error: 'Failed to save insight' }, { status: 500 });
   }
-} 
+}

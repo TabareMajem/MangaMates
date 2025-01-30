@@ -14,4 +14,4 @@ export const serviceConfig = {
     }
   }
   // ... other services
-}; 
+};

@@ -185,4 +185,4 @@ export class OAuthManager {
 
     if (error) throw error;
   }
-} 
+}

@@ -64,4 +64,4 @@ describe('Social Analyzer', () => {
       expect(Object.values(scores).every(v => v === 0.5)).toBe(true);
     });
   });
-}); 
+});

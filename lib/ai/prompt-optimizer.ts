@@ -145,4 +145,4 @@ Format: List each theme with a brief explanation of its significance.`,
       requiredVariables: ['text']
     });
   }
-} 
+}

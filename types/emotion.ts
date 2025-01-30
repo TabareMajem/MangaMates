@@ -30,4 +30,4 @@ export interface SocialSentiment {
 }
 
 // For backward compatibility
-export type EmotionState = EmotionData['emotions']; 
+export type EmotionState = EmotionData['emotions'];

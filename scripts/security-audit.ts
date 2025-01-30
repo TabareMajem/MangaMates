@@ -38,4 +38,4 @@ async function runSecurityAudit() {
   }
 }
 
-runSecurityAudit(); 
+runSecurityAudit();

@@ -10,4 +10,4 @@ export interface ConversationContext {
   currentEmotion: EmotionState;
   userSentiment: number;
   timestamp: string;
-} 
+}

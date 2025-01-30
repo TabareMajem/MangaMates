@@ -23,4 +23,4 @@ export class AICostOptimizer {
     // Implement token counting logic
     return Math.ceil(text.length / 4);
   }
-} 
+}

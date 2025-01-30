@@ -39,4 +39,4 @@ export interface AIConfig {
   maxTokens?: number;
   temperature?: number;
   contextWindow?: number;
-} 
+}

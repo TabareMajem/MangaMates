@@ -84,4 +84,4 @@ export class SocialAnalysisService {
       throw error;
     }
   }
-} 
+}

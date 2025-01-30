@@ -27,4 +27,4 @@ export default async function handler(
       error: 'Health check system failure'
     });
   }
-} 
+}

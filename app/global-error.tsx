@@ -38,4 +38,4 @@ export default function GlobalError({
       </body>
     </html>
   );
-} 
+}

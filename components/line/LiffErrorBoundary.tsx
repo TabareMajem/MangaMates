@@ -67,4 +67,4 @@ export class LiffErrorBoundary extends Component<Props, State> {
 
     return this.props.children;
   }
-} 
+}

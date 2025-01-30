@@ -45,4 +45,4 @@ CREATE TABLE pool_stats (
 );
 
 -- Create index for querying pool stats
-CREATE INDEX idx_pool_stats_timestamp ON pool_stats(timestamp DESC); 
+CREATE INDEX idx_pool_stats_timestamp ON pool_stats(timestamp DESC);

@@ -21,4 +21,4 @@ declare module '@sentry/nextjs' {
     captureMessage(message: string, options?: any): string;
     setUser(user: { id: string; email?: string }): void;
   };
-} 
+}

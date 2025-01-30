@@ -127,4 +127,4 @@ $$ LANGUAGE plpgsql;
 CREATE TRIGGER refresh_daily_analytics_trigger
   AFTER INSERT OR UPDATE OR DELETE ON analytics_events
   FOR EACH STATEMENT
-  EXECUTE FUNCTION refresh_daily_analytics(); 
+  EXECUTE FUNCTION refresh_daily_analytics();

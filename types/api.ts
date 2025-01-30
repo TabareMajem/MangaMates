@@ -19,4 +19,4 @@ export type ApiHandler<T = any> = (
 export interface ApiError extends Error {
   statusCode?: number;
   code?: string;
-} 
+}

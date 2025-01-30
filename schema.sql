@@ -75,4 +75,4 @@ CREATE POLICY "Users can update their own profile"
   ON public.user_profiles FOR UPDATE
   USING (auth.uid() = id);
 
--- Add similar policies for other tables 
+-- Add similar policies for other tables

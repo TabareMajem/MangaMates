@@ -117,4 +117,4 @@ export class KakaoFriendSync {
   private async updateLastSyncTime(userId: string): Promise<void> {
     await this.redis.set(`kakao_friend_sync:${userId}`, Date.now());
   }
-} 
+}

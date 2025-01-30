@@ -83,4 +83,4 @@ CREATE INDEX idx_referral_rewards_user ON referral_rewards(user_id);
 CREATE TRIGGER set_updated_at
   BEFORE UPDATE ON referral_codes
   FOR EACH ROW
-  EXECUTE FUNCTION set_updated_at(); 
+  EXECUTE FUNCTION set_updated_at();

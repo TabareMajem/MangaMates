@@ -8,4 +8,4 @@ export function LoadingState() {
       </div>
     </Card>
   );
-} 
+}

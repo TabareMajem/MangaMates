@@ -54,4 +54,4 @@ export async function saveAgent(agent: Partial<Character>): Promise<Character> {
 
   if (error) throw error;
   return data;
-} 
+}

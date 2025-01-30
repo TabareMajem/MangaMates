@@ -26,4 +26,4 @@ export function withApiMiddleware(handler: NextApiHandler) {
       return res.status(500).json({ error: 'Internal server error' });
     }
   };
-} 
+}

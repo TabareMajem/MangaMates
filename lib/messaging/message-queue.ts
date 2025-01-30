@@ -197,4 +197,4 @@ export class MessageQueue {
       throw error;
     }
   }
-} 
+}

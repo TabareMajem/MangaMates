@@ -55,4 +55,4 @@ export function EmotionChart({ data, onEmotionClick }: EmotionChartProps) {
       </ResponsiveContainer>
     </div>
   );
-} 
+}

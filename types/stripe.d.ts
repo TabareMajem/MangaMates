@@ -16,4 +16,4 @@ declare namespace Stripe {
       expires_at?: number;
     }
   }
-} 
+}

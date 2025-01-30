@@ -57,4 +57,4 @@ describe('Message Queue Performance', () => {
 
     expect(avgTimePerMessage).toBeLessThan(10); // Average < 10ms per message
   });
-}); 
+});

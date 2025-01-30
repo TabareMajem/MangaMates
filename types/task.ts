@@ -70,4 +70,4 @@ export interface TaskOutcome {
   duration: number;
   error?: string;
   metrics?: Record<string, number>;
-} 
+}

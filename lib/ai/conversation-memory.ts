@@ -38,4 +38,4 @@ export class ConversationMemory {
       lastInteraction: new Date()
     };
   }
-} 
+}

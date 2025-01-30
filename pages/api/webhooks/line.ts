@@ -35,4 +35,4 @@ export const config = {
       sizeLimit: '1mb',
     },
   },
-}; 
+};

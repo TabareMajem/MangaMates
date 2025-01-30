@@ -97,4 +97,4 @@ export class MessageDeliveryTracker {
   async getDeliveryMetrics(platform: 'line' | 'kakao', date: string): Promise<Record<string, number>> {
     return this.redis.hgetall(`delivery_metrics:${platform}:${date}`);
   }
-} 
+}

@@ -56,4 +56,4 @@ describe('GlobalErrorBoundary', () => {
     
     expect(screen.getByText('Recovered')).toBeInTheDocument();
   });
-}); 
+});

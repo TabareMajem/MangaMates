@@ -46,4 +46,4 @@ function createPrompt(character: Character, input: { type: string; content: stri
     default:
       return input.content;
   }
-} 
+}

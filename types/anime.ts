@@ -153,4 +153,4 @@ export enum MediaSort {
   FAVOURITES = 'FAVOURITES',
   SCORE_DESC = 'SCORE_DESC',
   SCORE = 'SCORE'
-} 
+}

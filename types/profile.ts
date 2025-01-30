@@ -30,4 +30,4 @@ export interface SocialMediaAnalysis {
       traits: string[];
     }[];
   };
-} 
+}

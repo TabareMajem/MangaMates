@@ -87,4 +87,4 @@ export class BotMonitor {
       stack: error.stack
     }));
   }
-} 
+}

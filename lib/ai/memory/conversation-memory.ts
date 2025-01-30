@@ -58,4 +58,4 @@ export class ConversationMemory {
     const key = `memory:${characterId}:history`;
     await this.redis.del(key);
   }
-} 
+}

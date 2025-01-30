@@ -22,4 +22,4 @@ describe('AuthForm', () => {
       expect(screen.getByText(/password is required/i)).toBeInTheDocument();
     });
   });
-}); 
+});

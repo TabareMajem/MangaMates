@@ -30,4 +30,4 @@ export interface JournalAnalysis {
   emotions: Record<string, number>;
   themes: string[];
   keywords: string[];
-} 
+}

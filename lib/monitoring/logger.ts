@@ -50,4 +50,4 @@ export class Logger {
   debug(message: string, context?: LogContext): void {
     this.logger.debug(context || {}, message);
   }
-} 
+}

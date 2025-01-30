@@ -22,4 +22,4 @@ export default async function handler(
     console.error('Failed to fetch experiment results:', error);
     res.status(500).json({ error: 'Failed to fetch experiment results' });
   }
-} 
+}

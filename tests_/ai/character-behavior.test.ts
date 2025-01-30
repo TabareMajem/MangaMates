@@ -182,4 +182,4 @@ describe('CharacterBehavior', () => {
       expect(extroResponse.response).toMatch(/exciting|fun|together/i);
     });
   });
-}); 
+});

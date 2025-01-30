@@ -5,4 +5,4 @@ const config = {
   channelSecret: process.env.LINE_CHANNEL_SECRET!
 };
 
-export const lineClient = new Client(config); 
+export const lineClient = new Client(config);

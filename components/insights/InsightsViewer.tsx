@@ -58,4 +58,4 @@ export function InsightsViewer({ userId }: { userId: string }) {
       )}
     </div>
   );
-} 
+}

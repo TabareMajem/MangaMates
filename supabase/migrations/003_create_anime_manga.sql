@@ -120,4 +120,4 @@ create policy "Users can view their own favorites"
 
 create policy "Users can manage their own favorites"
   on public.user_favorites for all
-  using (auth.uid() = user_id); 
+  using (auth.uid() = user_id);

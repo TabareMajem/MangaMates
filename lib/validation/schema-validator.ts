@@ -15,4 +15,4 @@ export class SchemaValidator {
 
     return schema.parse(data) as T;
   }
-} 
+}

@@ -34,4 +34,4 @@ export function AnalyticsDashboard({ userId }: { userId: string }) {
       </ResponsiveContainer>
     </div>
   );
-} 
+}

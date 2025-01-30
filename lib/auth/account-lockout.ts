@@ -56,4 +56,4 @@ export class AccountLockout {
       ex: this.config.lockoutDuration
     });
   }
-} 
+}

@@ -102,4 +102,4 @@ function AnalysisSkeleton() {
       </div>
     </Card>
   );
-} 
+}

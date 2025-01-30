@@ -112,4 +112,4 @@ export function ShareJournal({ entryId, userId, connections }: ShareJournalProps
       </DialogContent>
     </Dialog>
   );
-} 
+}

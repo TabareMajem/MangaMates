@@ -38,4 +38,4 @@ export async function calculateReferralStats(userId: string): Promise<ReferralSt
     pendingEarnings: pendingEarnings / 100,
     conversionRate
   };
-} 
+}

@@ -45,4 +45,4 @@ export class UsageTracker {
 
     return Number(usage || 0) < plan.limits[feature];
   }
-} 
+}

@@ -29,4 +29,4 @@ export interface ButtonProps extends BaseProps {
   disabled?: boolean;
   onClick?: () => void;
   type?: 'button' | 'submit' | 'reset';
-} 
+}

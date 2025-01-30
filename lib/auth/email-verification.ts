@@ -17,4 +17,4 @@ export class EmailVerificationSystem {
 
     await this.markEmailAsVerified(userId);
   }
-} 
+}

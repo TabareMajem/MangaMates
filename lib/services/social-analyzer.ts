@@ -112,4 +112,4 @@ function parseAnalysisResponse(response: string): Record<string, number> {
 // Export for testing
 export const __test__ = {
   parseAnalysisResponse
-}; 
+};

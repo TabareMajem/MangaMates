@@ -94,4 +94,4 @@ export class DatabaseManager {
       return false;
     }
   }
-} 
+}
