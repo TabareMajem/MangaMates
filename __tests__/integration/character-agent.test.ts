@@ -1,0 +1,3 @@
+describe('CharacterAgent', () => {
+  // Tests needed
+});
